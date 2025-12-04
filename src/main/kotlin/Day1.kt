@@ -1,7 +1,6 @@
 package org.example
 
 import java.io.File
-import kotlin.math.abs
 
 fun main() {
     d1p2()
@@ -9,14 +8,15 @@ fun main() {
 
 fun d1p2() {
     val reader = File("C:\\Users\\ryan7\\Desktop\\AdventOfCode25\\src\\main\\d1.txt").bufferedReader()
-    val inputLines = reader.useLines { lines ->
-        lines.toList()
-    }
+    val inputLines =
+        reader.useLines { lines ->
+            lines.toList()
+        }
 
     var counter = 50
     var code = 0
 
-    for(line in inputLines) {
+    for (line in inputLines) {
         val direction: Boolean = line.get(0) == 'R'
         val num = line.substring(1).toInt()
 
@@ -35,14 +35,15 @@ fun d1p2() {
 
 fun d1p1() {
     val reader = File("C:\\Users\\ryan7\\Desktop\\AdventOfCode25\\src\\main\\d1.txt").bufferedReader()
-    val inputLines = reader.useLines { lines ->
-        lines.toList()
-    }
+    val inputLines =
+        reader.useLines { lines ->
+            lines.toList()
+        }
 
     var counter = 50
     var code = 0
 
-    for(line in inputLines) {
+    for (line in inputLines) {
         val direction: Boolean = line.get(0) == 'R'
         val num = line.substring(1).toInt()
 

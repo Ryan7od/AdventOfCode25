@@ -1,7 +1,6 @@
 package org.example
 
 import java.io.File
-import kotlin.math.abs
 
 fun main() {
     d2p2()
@@ -22,16 +21,16 @@ fun d2p2() {
             val iString = i.toString()
             val n = iString.length
 
-            for (j in 1..n/2) {
+            for (j in 1..n / 2) {
                 if (n % j != 0) continue
 
                 val list: MutableList<String> = mutableListOf()
-                for (k in 0..<n/j) {
-                    list += iString.substring(k*j, (k+1)*j)
+                for (k in 0..<n / j) {
+                    list += iString.substring(k * j, (k + 1) * j)
                 }
 
                 val reference = list[0]
-                if (list.all {thing -> thing == reference}) {
+                if (list.all { thing -> thing == reference }) {
                     count += i
                     break
                 }

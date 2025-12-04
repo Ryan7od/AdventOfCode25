@@ -8,6 +8,7 @@ fun main() {
     d3p2()
 }
 
+
 fun d3p2() {
     val reader = File("C:\\Users\\ryan7\\Desktop\\AdventOfCode25\\src\\main\\d3.txt").bufferedReader()
     val inputLines = reader.useLines { lines ->
